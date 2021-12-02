@@ -14,54 +14,55 @@
         <input type="checkbox" id="darkMode">
     </header>
     <main>
-        <div id="questionOne">Fråga 1
-            <form>
-                <input type="radio" name="questionOne" id="radioQuestion" value="true">
-                <input type="radio" name="questionOne" id="radioQuestion" value="false">
+        <div >Fråga 1
+            <form id="questionOne">
+                <input type="radio" name="questionOne" id="question1" value="correct">
+                <input type="radio" name="questionOne" id="question1" value="wrong">
             </form>
         </div>
-        <div id="questionTwo">Fråga 2
-            <form>
-                <input type="radio" name="questionTwo" id="radioQuestion" value="false">
-                <input type="radio" name="questionTwo" id="radioQuestion" value="true">
+        <div >Fråga 2
+            <form id="questionTwo">
+                <input type="radio" name="questionTwo" id="question2" value="wrong">
+                <input type="radio" name="questionTwo" id="question2" value="correct">
             </form>
         </div>
-        <div id="questionThree">Fråga 3
-            <form>
-                <input type="radio" name="questionThree" id="radioQuestion" value="false">
-                <input type="radio" name="questionThree" id="radioQuestion" value="true">
+        <div >Fråga 3
+            <form id="questionThree">
+                <input type="radio" name="questionThree" id="question3" value="wrong">
+                <input type="radio" name="questionThree" id="question3" value="correct">
             </form>
         </div>
-        <div id="questionFour">Fråga 4
-            <form>
-                <input type="radio" name="questionFour" id="radioQuestion" value="false">
-                <input type="radio" name="questionFour" id="radioQuestion" value="true">
-                <input type="radio" name="questionFour" id="radioQuestion" value="false">
+        <div >Fråga 4
+            <form id="questionFour">
+                <input type="radio" name="questionFour" id="question4" value="wrong">
+                <input type="radio" name="questionFour" id="question4" value="correct">
+                <input type="radio" name="questionFour" id="question4" value="wrong">
             </form>
         </div>
-        <div id="questionFive">Fråga 5
-            <form>
-                <input type="radio" name="questionFive" id="radioQuestion" value="true">
-                <input type="radio" name="questionFive" id="radioQuestion" value="false">
-                <input type="radio" name="questionFive" id="radioQuestion" value="false">
+        <div >Fråga 5
+            <form id="questionFive">
+                <input type="radio" name="questionFive" id="question5" value="correct">
+                <input type="radio" name="questionFive" id="question5" value="wrong">
+                <input type="radio" name="questionFive" id="question5" value="wrong">
             </form>
         </div>
-        <div id="questionSix">Fråga 6
-            <form>
-                <input type="radio" name="questionSix" id="radioQuestion" value="true">
-                <input type="radio" name="questionSix" id="radioQuestion" value="false">
-                <input type="radio" name="questionSix" id="radioQuestion" value="false">
+        <div >Fråga 6
+            <form id="questionSix">
+                <input type="radio" name="questionSix" id="question6" value="correct">
+                <input type="radio" name="questionSix" id="question6" value="wrong">
+                <input type="radio" name="questionSix" id="question6" value="wrong">
             </form>
         </div>
-        <div id="questionSeven">Fråga 7
-            <form>
-                <input type="checkbox" name="questionSeven" id="">
-                <input type="checkbox" name="questionSeven" id="">
-                <input type="checkbox" name="questionSeven" id="">
-                <input type="checkbox" name="questionSeven" id="">
+        <div >Fråga 7
+            <form id="questionSeven">
+                <input type="checkbox" name="questionSeven" id="correctOption1" value="correct">
+                <input type="checkbox" name="questionSeven" id="wrongOption1" value="wrong">
+                <input type="checkbox" name="questionSeven" id="correctOption2" value="correct">
+                <input type="checkbox" name="questionSeven" id="wrongOption2" value="wrong">
             </form>
         </div>
-        <button>Get results!</button>
+        <input type="submit" id="getResult">
+        <h2 id="result"></h2>
     </main>
     
     <script src="main.js"></script>
