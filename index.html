@@ -9,59 +9,79 @@
 </head>
 <body>
     <header>
-        <h1>DC Quiz</h1>
-        <label for="darkMode">Dark mode</label>
+        <h1>Hund Quiz</h1>
         <input type="checkbox" id="darkMode">
+        <label for="darkMode">Dark mode</label>
     </header>
     <main>
-        <div >Fråga 1
+        <img src="Dango.jpg" alt="" id="dango">
+        <div >Valpar föds utan hörsel
             <form id="questionOne">
                 <input type="radio" name="questionOne" id="question1" value="correct">
+                Sant
                 <input type="radio" name="questionOne" id="question1" value="wrong">
+                Falskt
             </form>
         </div>
-        <div >Fråga 2
+        <div >Hundar ser bara i Svart-vitt
             <form id="questionTwo">
                 <input type="radio" name="questionTwo" id="question2" value="wrong">
+                sant
                 <input type="radio" name="questionTwo" id="question2" value="correct">
+                falskt
             </form>
         </div>
-        <div >Fråga 3
+        <div >Dalmatiner föds med fläckar
             <form id="questionThree">
                 <input type="radio" name="questionThree" id="question3" value="wrong">
+                sant
                 <input type="radio" name="questionThree" id="question3" value="correct">
+                falskt
             </form>
         </div>
-        <div >Fråga 4
+        <div >Hur många tänder har en vuxen hund?
             <form id="questionFour">
                 <input type="radio" name="questionFour" id="question4" value="wrong">
+                38
                 <input type="radio" name="questionFour" id="question4" value="correct">
+                42
                 <input type="radio" name="questionFour" id="question4" value="wrong">
+                46
             </form>
         </div>
-        <div >Fråga 5
+        <div >Hur många procent av hundar sover i sin ägares säng?
             <form id="questionFive">
                 <input type="radio" name="questionFive" id="question5" value="correct">
+                45%
                 <input type="radio" name="questionFive" id="question5" value="wrong">
+                38%
                 <input type="radio" name="questionFive" id="question5" value="wrong">
+                41%
             </form>
         </div>
-        <div >Fråga 6
+        <div >Vilken ras är drottningen av Englands favorit?
             <form id="questionSix">
                 <input type="radio" name="questionSix" id="question6" value="correct">
+                Corgi
                 <input type="radio" name="questionSix" id="question6" value="wrong">
+                Golden Retriever
                 <input type="radio" name="questionSix" id="question6" value="wrong">
+                Pomeranian
             </form>
         </div>
-        <div >Fråga 7
+        <div >BONUS: Vilka typer av leksaker är min hund Dangos favorit?
             <form id="questionSeven">
                 <input type="checkbox" name="questionSeven" id="correctOption1" value="correct">
+                Bollar
                 <input type="checkbox" name="questionSeven" id="wrongOption1" value="wrong">
+                Drag-leksaker
                 <input type="checkbox" name="questionSeven" id="correctOption2" value="correct">
+                Pip-leksaker
                 <input type="checkbox" name="questionSeven" id="wrongOption2" value="wrong">
+                Vatten-leksaker
             </form>
         </div>
-        <input type="submit" id="getResult">
+        <button id="getResult">Get results!</button>
         <h2 id="result"></h2>
     </main>
     

@@ -56,7 +56,7 @@ let checkButtons = resultBtn.addEventListener("click", () => {
         result.textContent = (`${score}/7! Bra kämpat men bättre lycka nästa gång! :)`);
         result.style.color = "red";
     } else {
-        result.textContent = (`${score}/7! Snyggt jobbat! :)`);
+        result.textContent = (`${score}/7! Snyggt jobbat! Nästa gång får du nog alla rätt! :)`);
         result.style.color = "orange";
     }
 });
