@@ -29,8 +29,8 @@ let checkScore = (name) => {
 };
 
 let clearCheckbox = (name) => {
-    document.querySelector(`input[id=${name}]:checked`).checked = false;
-}
+  document.querySelector(`input[id=${name}]:checked`).checked = false;
+};
 
 let checkButtons = resultBtn.addEventListener("click", () => {
   score = 0;
@@ -48,17 +48,15 @@ let checkButtons = resultBtn.addEventListener("click", () => {
   }
   console.log(score);
   // Result in DOM
-    let result = document.querySelector("#result")
-    if (score === 7) {
-        result.textContent = (`${score}/7! Grattis du fick alla rätt, Bra jobbat!`);
-        result.style.color = "green";
-    } else if (score < 4) {
-        result.textContent = (`${score}/7! Bra kämpat men bättre lycka nästa gång! :)`);
-        result.style.color = "red";
-    } else {
-        result.textContent = (`${score}/7! Snyggt jobbat! Nästa gång får du nog alla rätt! :)`);
-        result.style.color = "orange";
-    }
+  let result = document.querySelector("#result");
+  if (score === 7) {
+    result.textContent = `${score}/7! Grattis du fick alla rätt, Bra jobbat!`;
+    result.style.color = "green";
+  } else if (score < 4) {
+    result.textContent = `${score}/7! Bra kämpat men bättre lycka nästa gång! :)`;
+    result.style.color = "red";
+  } else {
+    result.textContent = `${score}/7! Snyggt jobbat! Nästa gång får du nog alla rätt! :)`;
+    result.style.color = "orange";
+  }
 });
-
-
